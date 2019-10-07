@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sorteerJSONstijl.css">
+    <title>Json</title>
+</head>
+<body>
+    <h1>Sorteren van Boeken.</h1>
+    <select  id="kenmerk">
+        <option value="titel" selected>titel</option>
+        <option value="auteur">auteur(s)</option>
+        <option value="jsdatum">datum uitgaven</option>
+        <option value="paginas">Bladzijden</option>
+        <option value="taal">taal</option>
+    </select>
+
+    <!-- radiobuttons voor oplopend en aflopend sorteren -->
+    <label><input type="radio" name="oplopend" value="1">Oplopend</label>
+    <label><input type="radio" name="oplopend" value="-1">Aflopend</label>
+
+    <div id="uitvoer"></div>
+    <script src="sorteerBoeken.js"></script>
+
+</body>
+</html>
